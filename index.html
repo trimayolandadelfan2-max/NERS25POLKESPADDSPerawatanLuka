@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Edukasi Perawatan Luka di Rumah</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:#f5f9ff;
+line-height:1.6;
+scroll-behavior:smooth;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#3a7bd5,#00d2ff);
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+header h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+/* NAVBAR */
+
+nav{
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+padding:15px;
+position:sticky;
+top:0;
+z-index:100;
+text-align:center;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#3a7bd5;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00a8cc;
+}
+
+/* CONTAINER */
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:40px 0;
+}
+
+/* CARD */
+
+.card{
+background:white;
+border-radius:15px;
+padding:25px;
+margin-bottom:40px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+opacity:0;
+transform:translateY(40px);
+}
+
+.card.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+.card img{
+width:100%;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+h2{
+color:#3a7bd5;
+margin-bottom:15px;
+}
+
+/* ACCORDION */
+
+.accordion{
+background:#3a7bd5;
+color:white;
+cursor:pointer;
+padding:15px;
+margin-top:10px;
+border:none;
+border-radius:8px;
+width:100%;
+text-align:left;
+font-size:16px;
+transition:0.3s;
+}
+
+.accordion:hover{
+background:#2a5db0;
+}
+
+.panel{
+display:none;
+padding:15px;
+background:#eef4ff;
+border-radius:8px;
+margin-top:5px;
+}
+
+/* FOOD GRID */
+
+.food-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:15px;
+margin-top:15px;
+}
+
+.food{
+background:linear-gradient(135deg,#00c6ff,#0072ff);
+color:white;
+padding:15px;
+text-align:center;
+border-radius:10px;
+font-weight:500;
+transition:0.3s;
+}
+
+.food:hover{
+transform:scale(1.08);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* AVOID FOOD */
+
+.badfood{
+background:linear-gradient(135deg,#ff7e5f,#ff3f34);
+}
+
+/* FOOTER */
+
+footer{
+background:#3a7bd5;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Edukasi Perawatan Luka di Rumah</h1>
+<p>Panduan keluarga dalam merawat luka dengan benar</p>
+</header>
+
+<nav>
+<a href="#pengertian">Pengertian</a>
+<a href="#bahaya">Tanda Bahaya</a>
+<a href="#perawatan">Perawatan</a>
+<a href="#nutrisi">Nutrisi</a>
+<a href="#hindari">Makanan Dihindari</a>
+</nav>
+
+<div class="container">
+
+<!-- PENGERTIAN -->
+
+<div class="card" id="pengertian">
+
+<h2>1. Pengertian Luka</h2>
+
+<img src="https://imgs.search.brave.com/OOgjCBV3guXi10VYoUtBHaWnIdaf62lNQHHYn-zwYiw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ub3Mu/d2p2LTEubmVvLmlk/L3JzcGktYXNzZXRz/LXByb2R1Y3Rpb24v/cnNwaS1hcGkvdXBs/b2Fkcy9NVGN6TURR/eU5qTXpPVGcyTVE9/PS5qcGc">
+
+<p>
+Luka adalah kerusakan atau terputusnya kontinuitas jaringan tubuh yang dapat terjadi pada kulit maupun jaringan di bawahnya akibat trauma, pembedahan, tekanan, infeksi, atau penyakit tertentu seperti diabetes.
+</p>
+
+<p>
+Proses penyembuhan luka merupakan proses biologis yang kompleks yang terdiri dari fase inflamasi, fase proliferasi, dan fase maturasi atau remodeling. Agar proses penyembuhan berjalan optimal, luka memerlukan perawatan yang tepat serta asupan nutrisi yang cukup.
+</p>
+
+</div>
+
+<!-- TANDA BAHAYA -->
+
+<div class="card" id="bahaya">
+
+<h2>2. Tanda Bahaya Luka</h2>
+
+<img src=https://www.midiatama.co.id/_next/image?url=https%3A%2F%2Fs3.miccapro.com%2Fartikel%2Fbageur-891211101094950.jpeg&w=1200&q=75>
+
+<button class="accordion">Kemerahan di sekitar luka</button>
+<div class="panel">
+Kemerahan yang meluas dapat menandakan adanya infeksi atau peradangan pada luka.
+<img src=https://imgs.search.brave.com/xIS-gqXkKzzfG3VJ8bHWKNWCgeId3oQcQuB1HYeUikI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/aGVsbG9zZWhhdC5j/b20vMjAyMC8wNC9i/OTg3M2Q1OC1zaHV0/dGVyc3RvY2tfMTI5/NTkwNzY2NC1lMTYw/NzU5MzA5MTY4My5q/cGc>
+</div>
+
+<button class="accordion">Bengkak pada area luka</button>
+<div class="panel">
+Pembengkakan berlebihan dapat menunjukkan proses inflamasi yang tidak normal.
+<img src=https://imgs.search.brave.com/F0m8V9ZbNI3WdDuEkc5uReHCFn1ju1rUFTrO2NSg5Ws/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vZGswejR1bXMz/L2ltYWdlL3VwbG9h/ZC92MTczOTg3NDcz/Ny9hdHRhY2hlZF9p/bWFnZS9vYmF0LWx1/a2EtYmVybmFuYWgt/ZGFuLWJlbmdrYWst/eWFuZy1lZmVrdGlm/LWF0YXNpLWtlbHVo/YW4tMC1hbG9kb2t0/ZXIuanBn>
+</div>
+
+<button class="accordion">Nyeri yang semakin meningkat</button>
+<div class="panel">
+Nyeri yang bertambah dan terasa berdenyut dapat menandakan gangguan penyembuhan.
+<img src=https://imgs.search.brave.com/COBaXLpi8qDnJtqlHthbOitRRSYtZIC9HPvo3bgXF1M/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4w/LXByb2R1Y3Rpb24t/aW1hZ2VzLWtseS5h/a2FtYWl6ZWQubmV0/L003akRGVlVPYXZR/cGpha0dFdDREY3ZH/T0REbz0vNjQweDM2/MC9zbWFydC9maWx0/ZXJzOnF1YWxpdHko/NzUpOnN0cmlwX2lj/YygpL2tseS1tZWRp/YS1wcm9kdWN0aW9u/L21lZGlhcy8zNDg4/NDU1L29yaWdpbmFs/LzYyNDI1NTM2Ni1w/aWN0dXJlLWZydXN0/cmF0ZWQteW91bmct/ZGFyay1oYWlyZWQt/ZmVtYWxlLXN0dWR5/aW5nLXNraW4taGVy/LWFybS1hZnRlci1z/aGUtZmVsbC1vZmYt/YmlrZS1zdHVkZW50/LWdpcmwtZHJlc3Nl/ZC1zdHlsaXNoLXN0/cmlwZWQtdC1zaGly/dC1sb29raW5nLWhl/ci1lbGJvdy1mZWVs/aW5nLWl0Y2gtcGFp/bl8zNDMwNTktMTQ1/NF9fM18uanBn>
+</div>
+
+<button class="accordion">Keluar cairan atau nanah</button>
+<div class="panel">
+Cairan kuning, hijau, atau berbau tidak sedap menunjukkan adanya infeksi bakteri.
+<img src=https://imgs.search.brave.com/dLj8rFBNvA8MTgF-DcY2RIjn43bHsfk12Yceb2oF94Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vZGswejR1bXMz/L2ltYWdlL3VwbG9h/ZC92MTcxOTI3NDMw/My9hdHRhY2hlZF9p/bWFnZS9vYmF0LWx1/a2EtYmVybmFuYWgt/eWFuZy1lZmVrdGlm/LW1lbXBlcmNlcGF0/LXBlbnllbWJ1aGFu/LTAtYWxvZG9rdGVy/LmpwZw>
+</div>
+
+<button class="accordion">Demam lebih dari 38°C</button>
+<div class="panel">
+Demam dapat menandakan infeksi yang sudah menyebar ke dalam tubuh.
+<img src=https://imgs.search.brave.com/ovUHKHjDv0KOV530ac8dVPVHPFdp0tlYWGpU_qK6Q4w/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kMWJw/ajB0djZ2Znh5cC5j/bG91ZGZyb250Lm5l/dC9hcnRpY2xlcy80/OWM2NDY1MC1hZGU1/LTQyODktYWZiZi0z/NzEzZjMwNTgzYzRf/YXJ0aWNsZV9pbWFn/ZV91cmwud2VicA>
+/div>
+
+<button class="accordion">Perubahan warna luka</button>
+<div class="panel">
+Luka yang berubah menjadi hitam atau kehijauan dapat menandakan jaringan mati (nekrosis).
+<img src=https://imgs.search.brave.com/F0m8V9ZbNI3WdDuEkc5uReHCFn1ju1rUFTrO2NSg5Ws/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vZGswejR1bXMz/L2ltYWdlL3VwbG9h/ZC92MTczOTg3NDcz/Ny9hdHRhY2hlZF9p/bWFnZS9vYmF0LWx1/a2EtYmVybmFuYWgt/ZGFuLWJlbmdrYWst/eWFuZy1lZmVrdGlm/LWF0YXNpLWtlbHVo/YW4tMC1hbG9kb2t0/ZXIuanBn>
+</div>
+
+</div>
+
+<!-- PERAWATAN -->
+
+<div class="card" id="perawatan">
+
+<h2>3. Cara Perawatan Luka di Rumah</h2>
+
+<img src="https://imgs.search.brave.com/DQFWwLrjBkys9C-rnxe-29Ci148Pe8d1rTGGVd10Zg0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYWxvZG9rdGVy/LmNvbS9kazB6NHVt/czMvaW1hZ2UvdXBs/b2FkL3YxNzM1Mjg2/NDY2L2F0dGFjaGVk/X2ltYWdlL3NlcmJh/LXNlcmJpLXBlcmF3/YXRhbi1sdWthLXRl/cmJ1a2EteWFuZy1i/YWlrLTAtYWxvZG9r/dGVyLmpwZw">
+
+<p>
+Perawatan luka di rumah perlu dilakukan dengan menjaga kebersihan dan teknik yang benar. Sebelum merawat luka, keluarga harus mencuci tangan terlebih dahulu untuk mencegah infeksi.
+</p>
+
+<p>
+Luka dibersihkan menggunakan cairan yang dianjurkan oleh tenaga kesehatan kemudian dikeringkan secara perlahan menggunakan kasa steril. Setelah itu luka dapat ditutup dengan perban agar tetap bersih dan terlindungi dari kuman. Berikut contoh bagaimana cara melakukan perawatan luka :
+
+<video controls width="560" height="315">
+  <source src="video/contoh.mp4" type="video/mp4">
+  Browser Anda tidak mendukung tag video.
+</video>   
+</p>
+
+</div>
+
+<!-- NUTRISI -->
+
+<div class="card" id="nutrisi">
+
+<h2>4. Makanan yang Dianjurkan</h2>
+
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061">
+
+<h3>Protein</h3>
+
+<div class="food-grid">
+<div class="food">Telur</div>
+<div class="food">Ikan</div>
+<div class="food">Ayam</div>
+<div class="food">Tempe</div>
+<div class="food">Tahu</div>
+<div class="food">Susu</div>
+</div>
+
+<h3 style="margin-top:20px;">Vitamin C</h3>
+
+<div class="food-grid">
+<div class="food">Jeruk</div>
+<div class="food">Jambu</div>
+<div class="food">Pepaya</div>
+<div class="food">Stroberi</div>
+<div class="food">Brokoli</div>
+<div class="food">Tomat</div>
+</div>
+
+<h3 style="margin-top:20px;">Vitamin A</h3>
+
+<div class="food-grid">
+<div class="food">Wortel</div>
+<div class="food">Bayam</div>
+<div class="food">Labu</div>
+<div class="food">Ubi Jalar</div>
+</div>
+
+</div>
+
+<!-- MAKANAN DIHINDARI -->
+
+<div class="card" id="hindari">
+
+<h2>5. Makanan yang Sebaiknya Dihindari</h2>
+
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+
+<div class="food-grid">
+
+<div class="food badfood">Makanan Tinggi Gula</div>
+<div class="food badfood">Fast Food</div>
+<div class="food badfood">Lemak Jenuh</div>
+<div class="food badfood">Minuman Bersoda</div>
+<div class="food badfood">Alkohol</div>
+<div class="food badfood">Makanan Tidak Higienis</div>
+
+</div>
+
+<p style="margin-top:15px;">
+Pada pasien diabetes, kontrol gula darah sangat penting karena kadar gula yang tinggi dapat memperlambat proses penyembuhan luka.
+</p>
+
+</div>
+
+</div>
+
+<footer>
+Media Edukasi Kesehatan - Perawatan Luka di Rumah
+</footer>
+
+<script>
+
+/* ACCORDION */
+
+var acc = document.getElementsByClassName("accordion");
+
+for (let i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+
+this.classList.toggle("active");
+
+var panel = this.nextElementSibling;
+
+panel.style.display =
+panel.style.display === "block" ? "none" : "block";
+
+});
+}
+
+/* SCROLL ANIMATION */
+
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+
+cards.forEach(card => {
+
+const cardTop = card.getBoundingClientRect().top;
+
+if(cardTop < window.innerHeight - 100){
+card.classList.add("show");
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
